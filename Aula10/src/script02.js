@@ -32,8 +32,8 @@ const carro4 = new Object({
     ano: 2008,
     cor: "Vermelho",
     acelerar: function () {
-        return this
-    }
+        return this.modelo + " acelerou";
+    },
 });
 
-console.log(carro4.modelo);
+console.log(carro4.acelerar);
