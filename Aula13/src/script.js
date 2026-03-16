@@ -93,6 +93,51 @@ console.log(matriz[0][0]);
 
 // Exemplo de vetor em JavaScript (array inidimensional)
 
+const comida = ["Pizza", "Arroz", "Macarrão"];
+
+// Utilizando o método flat()
+const listaNumeros = [[1, 2], [3, 4],[5, 6]];
+
+const novaListaNumeros = listaNumeros.flat();
+
+console.log(listaNumeros);
+console.log(novaListaNumeros);
+
+// Utilizando o flatMap()
+const listaNumeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const novaListaNumeros2 = listaNumeros2.flatMap((item) => {
+    return [item, item * 10];
+});
+
+console.log(novaListaNumeros2);
+
+// Utilizando o método splice()
+console.log(frutas);
+let novaListaFrutas = frutas.splice(2, 0, "Pêra", "Carambola");
+console.log(frutas);
+console.log(novaListaFrutas);
+
+// Utilizando o toSpliced()
+console.log(frutas);
+const frutasToSpliced = frutas.frutasToSpliced(0, 4);
+console.log(frutasToSpliced);
+
+// Utilizando o slice()
+const CopiaFrutas = frutas.toSpliced(0, 0);
+
+const frutasSlice = copiaFrutas.slice(2);
+
+console.log(frutasSlice);
+
+const frutasSlice2 = copiaFrutas.slice(1, 4);
+
+console.log(frutasSlice2);
+
+
+
+
+
 
 
 
