@@ -82,9 +82,6 @@ const pessoas = [
 
 console.log(pessoas);
 
-pessoas.sort((a, b) => {return a.idade});
-
-console.log(pessoas);
 
 
 
